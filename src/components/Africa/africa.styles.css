@@ -1,0 +1,170 @@
+.africa_container {
+    width: 100%;
+    height: fit-content;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 100px;
+    background-image: url('../../assets//bg_image.png');
+}
+
+.a_parant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.a_frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-top: 80px;
+}
+
+.a_frame .a_sec_one img {
+    width: 420px;
+    height: auto;
+}
+
+.a_sec_two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 50%;
+
+}
+
+.a_header {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #333333;
+    width: 90%;
+}
+
+.a_sec_one {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: ce;
+}
+
+.a_text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    width: 90%;
+    color: #333333;
+}
+
+.a_box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 90%;
+}
+
+.join {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    color: #000000;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+}
+
+.arrow div {
+    width: 57px;
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #EEA976;
+}
+
+.join_parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.join_g_parant {
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-top: 70px;
+}
+
+.eleBox {
+    width: 233px;
+    height: 74px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    background: #EEA976;
+    border-radius: 40px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    .africa_container{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .a_frame {
+        flex-direction: column;
+        width: 100%;
+    }
+    .a_sec_two {
+        width: 100%;
+    }
+    .a_header {
+        width: 90%;
+        /* padding-left: 40px; */
+    }
+    .a_text {
+        width: 90%;
+        /* padding-left: 40px; */
+
+    }
+    .join_g_parant {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .a_frame .a_sec_one img {
+        width: 320px;
+    }
+    .join_parent {
+        padding: 20px;
+    }
+}

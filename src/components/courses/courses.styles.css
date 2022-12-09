@@ -1,0 +1,88 @@
+.featured {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+    color: #000000;
+    margin-top: 80px;
+}
+
+.framer {
+    width: 343px;
+    height: 486px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.framer img {
+    width: 100%;
+    height: auto;
+}
+
+.boxer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px 10px;
+}
+
+.card_text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    text-transform: capitalize;
+    color: #333333;
+    padding-left: 20px;
+}
+
+.card_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding-left: 20px;
+}
+
+.card_footer_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+}
+
+.footer_price {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #F77E23;
+    padding-right: 20px;
+}
+
+.courses_card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    .framer {
+        width: 100%;
+        height: 550px;
+    }
+    .co_cont {
+        padding: 20px;
+    }
+}
+
