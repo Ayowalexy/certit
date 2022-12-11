@@ -3,6 +3,7 @@ import './africa.styles.css'
 import Frame from '../../assets/h_frame.png'
 import { Box } from "../header";
 import { Card } from "../courses";
+import F_2 from '../../assets/f_2.png'
 import {AiOutlineArrowRight } from 'react-icons/ai'
 
 
@@ -42,7 +43,13 @@ const Africa = () => {
                                 <AiOutlineArrowRight fill="#fff" />
                             </div>
                         </div>
-                        <Card />
+                        <Card
+                            img={F_2}
+                            week='12 weeks'
+                            price='30.5$'
+                            students='1.5k+ Students'
+                            name='Learn Marketing from Top Instructors.'
+                        />
                     </div>
                     <div className="join_side">
                         {['January', 'February', 'March', 'April', 'May'].map(ele => (
