@@ -1,13 +1,97 @@
-import React from "react";
+import React, { useState } from "react";
 import './africa.styles.css'
 import Frame from '../../assets/h_frame.png'
 import { Box } from "../header";
 import { Card } from "../courses";
+import F_1 from '../../assets/f_1.png'
 import F_2 from '../../assets/f_2.png'
-import {AiOutlineArrowRight } from 'react-icons/ai'
+import F_3 from '../../assets/f_3.png'
+import F_4 from '../../assets/f_4.png'
+import F_5 from '../../assets/f_5.png'
+import F_6 from '../../assets/f_6.png'
+
+import { AiOutlineArrowRight, AiOutlineArrowLeft } from 'react-icons/ai'
+
+const data = [
+    {
+        name: 'Data Analysis Python programming',
+        img: F_1,
+        students: '1.5k+ Students',
+        week: '12 weeks',
+        price: '50$',
+        header: 'National Open University of Nigeria',
+        id: 1
+    },
+    {
+        name: 'Cloud Computing 3-in-1 Course (AWS, Microsoft and Google Clouds)',
+        img: F_2,
+        students: '1k+ Students',
+        week: '12 weeks',
+        price: '75$',
+        header: '',
+        id: 2
+    }, {
+        name: 'Cyber Security Online Course.',
+        img: F_3,
+        students: '1.5k+ Students',
+        week: '12 weeks',
+        price: '80.5$',
+        header: '',
+        id: 3
+    }, {
+        name: 'Product Design (Learn UI/UX Figma Design)',
+        img: F_4,
+        students: '1.5k+ Students',
+        week: '12 weeks',
+        price: '50$',
+        header: '',
+        id: 4
+    }, {
+        name: 'Data Engineering Online Course',
+        img: F_5,
+        students: '1.5k+ Students',
+        week: '12 weeks',
+        price: '100$',
+        header: '',
+        id: 5
+    }, {
+        name: 'Digital Marketing Complete Course.',
+        img: F_6,
+        students: '1.5k+ Students',
+        week: '8 weeks',
+        price: '30$',
+        header: '',
+        id: 6
+    },
+
+]
 
 
 const Africa = () => {
+    const [eleData, setEleData] = useState(data[0]);
+    const [num, setNum] = useState(0)
+
+
+    const handleUpdate = () => {
+        setEleData(data[num])
+        if(num === 5){
+            setNum(0)
+        } else {
+            setNum(prev => prev + 1)
+        }
+    }
+
+    const handleUpdate_2 = () => {
+        setEleData(data[num])
+        if(num === 0){
+            setNum(5)
+        } else {
+            setNum(prev => prev - 1)
+        }
+    }
+
+
+
     return (
         <div className="africa_container">
             <div className="a_parant">
@@ -24,7 +108,9 @@ const Africa = () => {
                         </div>
                         <div className="a_box">
                             <Box>
-                                Enroll now
+                                <a target='_blank' href="https://forms.gle/Fq5zPspoSvbogzyH8">
+                                    Enroll
+                                </a>
                             </Box>
                         </div>
                     </div>
@@ -35,25 +121,31 @@ const Africa = () => {
                 <div className="join_g_parant">
                     <div className="join_parent">
                         <div className="join">Join the next batch</div>
-                        <div className="arrow"> 
-                            <div>
-                                <AiOutlineArrowRight fill="#fff" />
+                        <div className="arrow">
+                            <div
+                                onClick={handleUpdate_2}
+                            >
+                                <AiOutlineArrowLeft size='30px' fill="#fff" />
                             </div>
-                            <div>
-                                <AiOutlineArrowRight fill="#fff" />
+                            <div
+                                onClick={handleUpdate}
+                            >
+                                <AiOutlineArrowRight size='30px' fill="#fff" />
                             </div>
                         </div>
                         <Card
-                            img={F_2}
-                            week='12 weeks'
-                            price='30.5$'
-                            students='1.5k+ Students'
-                            name='Learn Marketing from Top Instructors.'
+                            img={eleData.img}
+                            week={eleData.week}
+                            price={eleData.price}
+                            students={eleData.students}
+                            name={eleData.name}
                         />
                     </div>
                     <div className="join_side">
                         {['January', 'February', 'March', 'April', 'May'].map(ele => (
-                            <div className="eleBox">{ele}</div>
+                            <a target='_blank' href="https://forms.gle/Fq5zPspoSvbogzyH8">
+                                <div className="eleBox">{ele}</div>
+                            </a>
                         ))}
                     </div>
                 </div>

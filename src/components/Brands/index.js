@@ -37,15 +37,17 @@ const Brand = () => {
     const matches = useMediaQuery('(min-width:600px)');
 
     return (
+        <>
+        <div className="partner_inst">Partner Institutions</div>
+
         <div className="brand_container">
            
 
             <div className="marque_cont">
                 <Marquee speed={40} gradient={false} pauseOnHover={true}>
-                    <div className="partner_inst">Partner Institutions</div>
                     {
                         [
-                            Img1, Img2, Img3, Img4, Img5, Img7, Img8, Img9, Img10, Img11, Img12, Img13, Img14, Img15
+                            Img2, Img4, Img5, Img8, Img9, Img10, Img11, Img12, Img13, Img14, Img15
                         ].map((element, idx) => (
                             // <Box className="box__1_" key={idx} img={element} />
                             <img className="box__1_ img__12" key={idx} src={element} />
@@ -55,6 +57,7 @@ const Brand = () => {
             </div>
 
         </div>
+        </>
     )
 }
 

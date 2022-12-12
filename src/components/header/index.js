@@ -30,12 +30,16 @@ const Header = () => {
             {
                 !matches ?
                     <div className="mpbile-header">
-                        
-                            
-                            <img src={Logo} className='hheader_logo' />
-                            <Box>Enroll</Box>
-                            {/* <AiOutlineMenu /> */}
-                    
+
+
+                        <img src={Logo} className='hheader_logo' />
+                        <Box>
+                            <a target='_blank' href="https://forms.gle/Fq5zPspoSvbogzyH8">
+                                Enroll
+                            </a>
+                        </Box>
+                        {/* <AiOutlineMenu /> */}
+
                     </div>
                     :
                     <div className="header__">
@@ -47,7 +51,11 @@ const Header = () => {
                             <div className="header_link">Contact Us</div>
                         </div>
                         <div className="header_box">
-                            <Box>Enroll</Box>
+                            <Box>
+                                <a target='_blank' href="https://forms.gle/Fq5zPspoSvbogzyH8">
+                                    Enroll
+                                </a>
+                            </Box>
                             <div className="header_link">Login</div>
                         </div>
 

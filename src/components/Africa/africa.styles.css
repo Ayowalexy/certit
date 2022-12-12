@@ -92,6 +92,7 @@
 .arrow div {
     width: 57px;
     height: 57px;
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
