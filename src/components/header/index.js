@@ -16,6 +16,7 @@ export const Box = styled.button`
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
+    cursor: pointer;
     line-height: 22px;
     color: #000000;
 `
@@ -33,11 +34,11 @@ const Header = () => {
 
 
                         <img src={Logo} className='hheader_logo' />
-                        <Box>
-                            <a target='_blank' href="https://forms.gle/Fq5zPspoSvbogzyH8">
-                                Enroll
-                            </a>
-                        </Box>
+
+                        <a target='_blank' href="https://forms.gle/Fq5zPspoSvbogzyH8">
+                            <Box> Enroll</Box>
+                        </a>
+
                         {/* <AiOutlineMenu /> */}
 
                     </div>
@@ -51,11 +52,9 @@ const Header = () => {
                             <div className="header_link">Contact Us</div>
                         </div>
                         <div className="header_box">
-                            <Box>
-                                <a target='_blank' href="https://forms.gle/Fq5zPspoSvbogzyH8">
-                                    Enroll
-                                </a>
-                            </Box>
+                            <a target='_blank' href="https://forms.gle/Fq5zPspoSvbogzyH8">
+                                <Box> Enroll</Box>
+                            </a>
                             <div className="header_link">Login</div>
                         </div>
 

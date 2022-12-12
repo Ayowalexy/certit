@@ -18,11 +18,9 @@ export const Card = ({ name, img, students, week, price, header }) => (
             <div className="card_header">
                 {header}
             </div>
-            <Box>
-                <a target='_blank' href="https://forms.gle/Fq5zPspoSvbogzyH8">
-                    Enroll
-                </a>
-            </Box>
+            <a target='_blank' href="https://forms.gle/Fq5zPspoSvbogzyH8">
+                <Box> Enroll</Box>
+            </a>
         </div>
         <div className="framer_b">
             <div className="card_text">

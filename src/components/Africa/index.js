@@ -107,11 +107,9 @@ const Africa = () => {
                             Short Courses Certifcation, Diploma, Higher Diploma, MSc, MBA, PHD in in-demand digital skills.
                         </div>
                         <div className="a_box">
-                            <Box>
-                                <a target='_blank' href="https://forms.gle/Fq5zPspoSvbogzyH8">
-                                    Enroll
-                                </a>
-                            </Box>
+                        <a target='_blank' href="https://forms.gle/Fq5zPspoSvbogzyH8">
+                                <Box> Enroll</Box>
+                            </a>
                         </div>
                     </div>
                 </div>
