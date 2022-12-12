@@ -133,8 +133,9 @@
     }
 
     .all_courses button {
-        margin-left: -100px;
-        width: 130px;
+        margin-left: -110px;
+        /* padding: 0px 30px; */
+        width: 160px;
         font-size: 12px;
     }
 }
